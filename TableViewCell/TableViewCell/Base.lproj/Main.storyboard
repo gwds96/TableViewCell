@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fUz-ia-szg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="waV-H1-LwX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,47 +10,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="FPI-yV-y1g">
+        <!--Shop Page View-->
+        <scene sceneID="KeA-gn-9ng">
             <objects>
-                <viewController id="CEC-X6-XjU" customClass="ViewController" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B0u-35-Rz4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c6D-e2-NuW">
-                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
-                                <segments>
-                                    <segment title="TRANG CHỦ"/>
-                                    <segment title="DANH MỤC"/>
-                                </segments>
-                                <connections>
-                                    <action selector="tapControl:" destination="CEC-X6-XjU" eventType="valueChanged" id="mER-vD-Mly"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="c6D-e2-NuW" firstAttribute="top" secondItem="mSn-aN-9SL" secondAttribute="top" id="DtG-uG-Agt"/>
-                            <constraint firstItem="c6D-e2-NuW" firstAttribute="leading" secondItem="mSn-aN-9SL" secondAttribute="leading" id="kdj-l4-GgX"/>
-                            <constraint firstItem="c6D-e2-NuW" firstAttribute="trailing" secondItem="mSn-aN-9SL" secondAttribute="trailing" id="uJi-mu-rsJ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="mSn-aN-9SL"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Uh1-cr-gG5"/>
-                    <connections>
-                        <outlet property="displayControl" destination="c6D-e2-NuW" id="FKM-vv-pef"/>
-                        <outlet property="displayView" destination="B0u-35-Rz4" id="PZA-EK-O8b"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="avq-RX-Auh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="waV-H1-LwX" customClass="ShopPageView" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0z-nc-kOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2976.8000000000002" y="-352.17391304347831"/>
+            <point key="canvasLocation" x="2761" y="-350"/>
         </scene>
         <!--Shop-->
         <scene sceneID="kxm-w2-KGU">
             <objects>
-                <viewController storyboardIdentifier="Shop" id="Z1t-Yh-a2o" customClass="CatalogueVC" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CatalogueVC" id="Z1t-Yh-a2o" customClass="CatalogueVC" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="guO-K9-eTt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,7 +96,7 @@
         <!--MainVC-->
         <scene sceneID="wRS-lT-RfQ">
             <objects>
-                <viewController storyboardIdentifier="Main" id="mUs-gT-nma" customClass="MainVC" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="mUs-gT-nma" customClass="MainVC" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tkp-ga-jvN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,24 +205,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qW-dV-ytJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4399.1999999999998" y="-349.47526236881561"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="sMJ-fp-lPX">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fUz-ia-szg" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZpA-xL-2W1">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CEC-X6-XjU" kind="relationship" relationship="rootViewController" id="o2r-GO-crr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zWQ-t6-5Y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2037.5999999999999" y="-352.17391304347831"/>
         </scene>
     </scenes>
     <resources>
