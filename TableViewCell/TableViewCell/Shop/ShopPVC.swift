@@ -27,8 +27,10 @@ class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
     func moveToPage(_ index: Int) {
         if index == 1 {
             setViewControllers([subViewControllers[index]], direction: .forward, animated: true, completion: nil)
+            delegateB?.colorOfButton(1)
         }else {
             setViewControllers([subViewControllers[index]], direction: .reverse, animated: true, completion: nil)
+            delegateB?.colorOfButton(0)
         }
         
         func presentationCount(for pageViewController: UIPageViewController) -> Int {
