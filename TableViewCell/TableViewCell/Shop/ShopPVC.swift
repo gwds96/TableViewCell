@@ -56,14 +56,13 @@ class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
         currentIndex += 1
         return subViewControllers[currentIndex]
     }
-}
-
-extension ShopPVC: IndexDelegate0, IndexDelegate1 {
-    func returnIndex0(_ index: Int) {
-        delegateB?.colorOfButton(index)
-    }
     
-    func returnIndex1(_ index: Int) {
-        delegateB?.colorOfButton(index)
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        if previousViewControllers[0] == subViewControllers[1] && completed == true {
+            currentIndex = 0
+        }else if previousViewControllers[0] == subViewControllers[0] && completed == true {
+            currentIndex = 1
+        }
+        delegateB?.colorOfButton(currentIndex)
     }
 }

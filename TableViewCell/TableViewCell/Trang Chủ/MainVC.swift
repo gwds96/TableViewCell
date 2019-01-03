@@ -1,9 +1,5 @@
 import UIKit
 
-protocol IndexDelegate0: class {
-    func returnIndex0(_ index: Int)
-}
-
 class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var mainTableView: UITableView!
@@ -14,12 +10,6 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let line1Title = ["Super Mario", "Aquaman", "Joker", "Quinn", "Luthor"]
     let line2Title = ["Harley", "Supermen", "Green", "Arrow", "Firestorm"]
     let line3Title = ["Deathstroke", "Batman", "Suicide", "Flash", "Wonder Woman"]
-    
-    weak var delegate0:IndexDelegate0?
-    
-    override func viewWillAppear(_ animated: Bool) {
-        delegate0?.returnIndex0(0)
-    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
