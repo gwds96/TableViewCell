@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F75EF49421DC5176004A8786 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75EF49321DC5176004A8786 /* ShopVC.swift */; };
-		F75EF49621DC57A4004A8786 /* ShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75EF49521DC57A4004A8786 /* ShopCell.swift */; };
+		F747F33221DDB4AE003C7C53 /* ZaloVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747F33121DDB4AE003C7C53 /* ZaloVC.swift */; };
+		F747F33421DDB53E003C7C53 /* ZaloTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747F33321DDB53E003C7C53 /* ZaloTCell.swift */; };
 		F75EF49821DC5BE8004A8786 /* FatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75EF49721DC5BE8004A8786 /* FatherVC.swift */; };
 		F795C22921D4AAA0009B0757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C22821D4AAA0009B0757 /* AppDelegate.swift */; };
 		F795C22E21D4AAA0009B0757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F795C22C21D4AAA0009B0757 /* Main.storyboard */; };
 		F795C23021D4AAA1009B0757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F795C22F21D4AAA1009B0757 /* Assets.xcassets */; };
 		F795C23321D4AAA1009B0757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F795C23121D4AAA1009B0757 /* LaunchScreen.storyboard */; };
-		F79EDF3D21D62CDC00D28D81 /* ShopPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EDF3C21D62CDC00D28D81 /* ShopPageView.swift */; };
+		F79EDF3D21D62CDC00D28D81 /* ShopPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EDF3C21D62CDC00D28D81 /* ShopPVC.swift */; };
 		F7E30D0B21D5B15A00A231B5 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30D0A21D5B15A00A231B5 /* ItemCell.swift */; };
 		F7E30D0D21D5B19800A231B5 /* CatalogueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30D0C21D5B19800A231B5 /* CatalogueVC.swift */; };
 		F7E30D0F21D5DD3800A231B5 /* ItemMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E30D0E21D5DD3800A231B5 /* ItemMainCell.swift */; };
@@ -23,8 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F75EF49321DC5176004A8786 /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
-		F75EF49521DC57A4004A8786 /* ShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCell.swift; sourceTree = "<group>"; };
+		F747F33121DDB4AE003C7C53 /* ZaloVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloVC.swift; sourceTree = "<group>"; };
+		F747F33321DDB53E003C7C53 /* ZaloTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloTCell.swift; sourceTree = "<group>"; };
 		F75EF49721DC5BE8004A8786 /* FatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatherVC.swift; sourceTree = "<group>"; };
 		F795C22521D4AAA0009B0757 /* TableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F795C22821D4AAA0009B0757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +32,7 @@
 		F795C22F21D4AAA1009B0757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F795C23221D4AAA1009B0757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F795C23421D4AAA1009B0757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F79EDF3C21D62CDC00D28D81 /* ShopPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPageView.swift; sourceTree = "<group>"; };
+		F79EDF3C21D62CDC00D28D81 /* ShopPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopPVC.swift; sourceTree = "<group>"; };
 		F7E30D0A21D5B15A00A231B5 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		F7E30D0C21D5B19800A231B5 /* CatalogueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogueVC.swift; sourceTree = "<group>"; };
 		F7E30D0E21D5DD3800A231B5 /* ItemMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMainCell.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				F75EF49721DC5BE8004A8786 /* FatherVC.swift */,
-				F79EDF3C21D62CDC00D28D81 /* ShopPageView.swift */,
+				F79EDF3C21D62CDC00D28D81 /* ShopPVC.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -79,9 +79,9 @@
 		F795C22721D4AAA0009B0757 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				F75EF49321DC5176004A8786 /* ShopVC.swift */,
-				F75EF49521DC57A4004A8786 /* ShopCell.swift */,
 				F795C22821D4AAA0009B0757 /* AppDelegate.swift */,
+				F747F33121DDB4AE003C7C53 /* ZaloVC.swift */,
+				F747F33321DDB53E003C7C53 /* ZaloTCell.swift */,
 				F75EF49921DC5C03004A8786 /* Shop */,
 				F79EDF3F21D62D2600D28D81 /* Trang Chủ */,
 				F79EDF3E21D62CEB00D28D81 /* Danh mục */,
@@ -186,14 +186,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F795C22921D4AAA0009B0757 /* AppDelegate.swift in Sources */,
-				F75EF49621DC57A4004A8786 /* ShopCell.swift in Sources */,
 				F7E30D1321D5E85100A231B5 /* MainVC.swift in Sources */,
-				F75EF49421DC5176004A8786 /* ShopVC.swift in Sources */,
 				F7E30D0F21D5DD3800A231B5 /* ItemMainCell.swift in Sources */,
+				F747F33221DDB4AE003C7C53 /* ZaloVC.swift in Sources */,
 				F7E30D1121D5DF9C00A231B5 /* ItemCollectionCell.swift in Sources */,
-				F79EDF3D21D62CDC00D28D81 /* ShopPageView.swift in Sources */,
+				F79EDF3D21D62CDC00D28D81 /* ShopPVC.swift in Sources */,
 				F7E30D0D21D5B19800A231B5 /* CatalogueVC.swift in Sources */,
 				F75EF49821DC5BE8004A8786 /* FatherVC.swift in Sources */,
+				F747F33421DDB53E003C7C53 /* ZaloTCell.swift in Sources */,
 				F7E30D0B21D5B15A00A231B5 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
