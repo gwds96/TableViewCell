@@ -1,7 +1,7 @@
 import UIKit
 
 protocol IndexDelegate1: class {
-    func Index1(_ index: Int)
+    func returnIndex1(_ index: Int)
 }
 
 class CatalogueVC: UIViewController, UITableViewDataSource {
@@ -14,7 +14,7 @@ class CatalogueVC: UIViewController, UITableViewDataSource {
                      "Khách sạn", "Giáo dục", "Sức khoẻ", "Dịch vụ khác"]
     
     override func viewWillAppear(_ animated: Bool) {
-        delegate1?.Index1(1)
+        delegate1?.returnIndex1(1)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

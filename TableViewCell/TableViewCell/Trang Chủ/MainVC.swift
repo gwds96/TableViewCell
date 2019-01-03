@@ -1,7 +1,7 @@
 import UIKit
 
 protocol IndexDelegate0: class {
-    func Index0(_ index: Int)
+    func returnIndex0(_ index: Int)
 }
 
 class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -18,7 +18,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     weak var delegate0:IndexDelegate0?
     
     override func viewWillAppear(_ animated: Bool) {
-        delegate0?.Index0(0)
+        delegate0?.returnIndex0(0)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

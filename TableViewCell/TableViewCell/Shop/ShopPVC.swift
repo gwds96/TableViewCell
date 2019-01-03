@@ -59,11 +59,11 @@ class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
 }
 
 extension ShopPVC: IndexDelegate0, IndexDelegate1 {
-    func Index0(_ index: Int) {
+    func returnIndex0(_ index: Int) {
         delegateB?.colorOfButton(index)
     }
     
-    func Index1(_ index: Int) {
+    func returnIndex1(_ index: Int) {
         delegateB?.colorOfButton(index)
     }
 }
