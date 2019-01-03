@@ -1,18 +1,24 @@
 import UIKit
 
+//protocol PageViewDelegate {
+//}
+
 class ShopPageView: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     lazy var subViewControllers: [UIViewController] = {
         return [
             UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainVC") as! MainVC,
-            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Catalogue") as! CatalogueVC
+            UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CatalogueVC") as! CatalogueVC
         ]
     }()
+    
+    var inDex: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
         self.delegate = self
-        setViewControllers([subViewControllers[0]], direction: .forward, animated: true, completion: nil)
+        setViewControllers([subViewControllers[0]], direction: .forward, animated: false, completion: nil)
     }
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
@@ -34,6 +40,8 @@ class ShopPageView: UIPageViewController, UIPageViewControllerDataSource, UIPage
         }
         return subViewControllers[currentIndex + 1]
     }
-    
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        return inDex!
+    }
 
 }
