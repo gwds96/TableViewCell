@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="6655.1999999999998" y="-314.39280359820094"/>
         </scene>
-        <!--Shop-->
+        <!--List-->
         <scene sceneID="kxm-w2-KGU">
             <objects>
-                <viewController storyboardIdentifier="CatalogueVC" id="Z1t-Yh-a2o" customClass="CatalogueVC" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CatalogueVC" id="Z1t-Yh-a2o" userLabel="List" customClass="CatalogueVC" customModule="TableViewCell" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="guO-K9-eTt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F742B35421DE0D4400A77381 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F742B35321DE0D4400A77381 /* Default-568h@2x.png */; };
 		F747F33221DDB4AE003C7C53 /* ZaloVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747F33121DDB4AE003C7C53 /* ZaloVC.swift */; };
 		F747F33421DDB53E003C7C53 /* ZaloTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747F33321DDB53E003C7C53 /* ZaloTCell.swift */; };
 		F75EF49821DC5BE8004A8786 /* FatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75EF49721DC5BE8004A8786 /* FatherVC.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F742B35321DE0D4400A77381 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F747F33121DDB4AE003C7C53 /* ZaloVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloVC.swift; sourceTree = "<group>"; };
 		F747F33321DDB53E003C7C53 /* ZaloTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloTCell.swift; sourceTree = "<group>"; };
 		F75EF49721DC5BE8004A8786 /* FatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatherVC.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		F795C21C21D4AAA0009B0757 = {
 			isa = PBXGroup;
 			children = (
+				F742B35321DE0D4400A77381 /* Default-568h@2x.png */,
 				F795C22721D4AAA0009B0757 /* TableViewCell */,
 				F795C22621D4AAA0009B0757 /* Products */,
 			);
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F795C23321D4AAA1009B0757 /* LaunchScreen.storyboard in Resources */,
+				F742B35421DE0D4400A77381 /* Default-568h@2x.png in Resources */,
 				F795C23021D4AAA1009B0757 /* Assets.xcassets in Resources */,
 				F795C22E21D4AAA0009B0757 /* Main.storyboard in Resources */,
 			);
