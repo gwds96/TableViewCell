@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F747F33221DDB4AE003C7C53 /* ZaloVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747F33121DDB4AE003C7C53 /* ZaloVC.swift */; };
+		F747F33421DDB53E003C7C53 /* ZaloTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F747F33321DDB53E003C7C53 /* ZaloTCell.swift */; };
 		F75EF49821DC5BE8004A8786 /* FatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75EF49721DC5BE8004A8786 /* FatherVC.swift */; };
 		F795C22921D4AAA0009B0757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F795C22821D4AAA0009B0757 /* AppDelegate.swift */; };
 		F795C22E21D4AAA0009B0757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F795C22C21D4AAA0009B0757 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F747F33121DDB4AE003C7C53 /* ZaloVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloVC.swift; sourceTree = "<group>"; };
+		F747F33321DDB53E003C7C53 /* ZaloTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaloTCell.swift; sourceTree = "<group>"; };
 		F75EF49721DC5BE8004A8786 /* FatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatherVC.swift; sourceTree = "<group>"; };
 		F795C22521D4AAA0009B0757 /* TableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F795C22821D4AAA0009B0757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				F795C22821D4AAA0009B0757 /* AppDelegate.swift */,
+				F747F33121DDB4AE003C7C53 /* ZaloVC.swift */,
+				F747F33321DDB53E003C7C53 /* ZaloTCell.swift */,
 				F75EF49921DC5C03004A8786 /* Shop */,
 				F79EDF3F21D62D2600D28D81 /* Trang Chủ */,
 				F79EDF3E21D62CEB00D28D81 /* Danh mục */,
@@ -182,10 +188,12 @@
 				F795C22921D4AAA0009B0757 /* AppDelegate.swift in Sources */,
 				F7E30D1321D5E85100A231B5 /* MainVC.swift in Sources */,
 				F7E30D0F21D5DD3800A231B5 /* ItemMainCell.swift in Sources */,
+				F747F33221DDB4AE003C7C53 /* ZaloVC.swift in Sources */,
 				F7E30D1121D5DF9C00A231B5 /* ItemCollectionCell.swift in Sources */,
 				F79EDF3D21D62CDC00D28D81 /* ShopPVC.swift in Sources */,
 				F7E30D0D21D5B19800A231B5 /* CatalogueVC.swift in Sources */,
 				F75EF49821DC5BE8004A8786 /* FatherVC.swift in Sources */,
+				F747F33421DDB53E003C7C53 /* ZaloTCell.swift in Sources */,
 				F7E30D0B21D5B15A00A231B5 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

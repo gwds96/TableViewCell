@@ -32,10 +32,10 @@ class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
             setViewControllers([subViewControllers[index]], direction: .reverse, animated: true, completion: nil)
             delegateB?.colorOfButton(0)
         }
-        
-        func presentationCount(for pageViewController: UIPageViewController) -> Int {
-            return subViewControllers.count
-        }
+    }
+    
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return subViewControllers.count
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -45,6 +45,7 @@ class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
         }
         currentIndex -= 1
         return subViewControllers[currentIndex]
+        
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
@@ -55,15 +56,14 @@ class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
         currentIndex += 1
         return subViewControllers[currentIndex]
     }
-    
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        if previousViewControllers == [subViewControllers[0]] {
-            currentIndex = 1
-        }else {
-            currentIndex = 0
-        }
-        delegateB?.colorOfButton(currentIndex)
-    }
 }
 
-
+extension ShopPVC: IndexDelegate0, IndexDelegate1 {
+    func Index0(_ index: Int) {
+        delegateB?.colorOfButton(index)
+    }
+    
+    func Index1(_ index: Int) {
+        delegateB?.colorOfButton(index)
+    }
+}
