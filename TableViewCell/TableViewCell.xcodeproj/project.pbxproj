@@ -86,8 +86,8 @@
 				F747F33121DDB4AE003C7C53 /* ZaloVC.swift */,
 				F747F33321DDB53E003C7C53 /* ZaloTCell.swift */,
 				F75EF49921DC5C03004A8786 /* Shop */,
-				F79EDF3F21D62D2600D28D81 /* Trang Chủ */,
-				F79EDF3E21D62CEB00D28D81 /* Danh mục */,
+				F79EDF3F21D62D2600D28D81 /* Home */,
+				F79EDF3E21D62CEB00D28D81 /* List */,
 				F795C22C21D4AAA0009B0757 /* Main.storyboard */,
 				F795C22F21D4AAA1009B0757 /* Assets.xcassets */,
 				F795C23121D4AAA1009B0757 /* LaunchScreen.storyboard */,
@@ -96,24 +96,24 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		F79EDF3E21D62CEB00D28D81 /* Danh mục */ = {
+		F79EDF3E21D62CEB00D28D81 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				F7E30D0C21D5B19800A231B5 /* CatalogueVC.swift */,
 				F7E30D0A21D5B15A00A231B5 /* ItemCell.swift */,
 			);
-			name = "Danh mục";
+			name = List;
 			path = "Danh mục";
 			sourceTree = "<group>";
 		};
-		F79EDF3F21D62D2600D28D81 /* Trang Chủ */ = {
+		F79EDF3F21D62D2600D28D81 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				F7E30D1221D5E85100A231B5 /* MainVC.swift */,
 				F7E30D0E21D5DD3800A231B5 /* ItemMainCell.swift */,
 				F7E30D1021D5DF9C00A231B5 /* ItemCollectionCell.swift */,
 			);
-			name = "Trang Chủ";
+			name = Home;
 			path = "Trang Chủ";
 			sourceTree = "<group>";
 		};

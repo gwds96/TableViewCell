@@ -9,13 +9,10 @@ class ItemMainCell: UITableViewCell, UICollectionViewDataSource {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -24,8 +21,8 @@ class ItemMainCell: UITableViewCell, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCellMain", for: indexPath) as! ItemCollectionCell
-        cell.iconCollectionCell.image = lineIcon[indexPath.row]
-        cell.titleCollectionCell.text = lineTitle[indexPath.row]
+        cell.iconImage.image = lineIcon[indexPath.row]
+        cell.titleLabel.text = lineTitle[indexPath.row]
         return cell
     }
 }

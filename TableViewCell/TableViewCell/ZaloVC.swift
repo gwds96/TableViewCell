@@ -8,10 +8,6 @@ class ZaloVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
                      "Shop", "Stickers", "Game"]
     let zaloIcon = [#imageLiteral(resourceName: "icons8-binoculars-48"), #imageLiteral(resourceName: "icons8-alien-48"), #imageLiteral(resourceName: "icons8-sci-fi-48"), #imageLiteral(resourceName: "icons8-santas-hat-48 (1)"), #imageLiteral(resourceName: "icons8-grey-48"), #imageLiteral(resourceName: "icons8-bam-48")]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }

@@ -33,13 +33,10 @@ class FatherVC: UIViewController {
 extension FatherVC: ButtonDelegate {
     
     func colorOfButton(_ number: Int) {
-        if number == 0 {
-            button1.backgroundColor = UIColor.white
-            button0.backgroundColor = UIColor.red
-        } else {
-            button0.backgroundColor = UIColor.white
-            button1.backgroundColor = UIColor.red
-        }
+        let color0: UIColor = (number == 1) ? .white : .red
+        button0.backgroundColor = color0
+        let color1: UIColor = (number == 0) ? .white : .red
+        button1.backgroundColor = color1
     }
     
 }

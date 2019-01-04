@@ -45,7 +45,6 @@ class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
         }
         currentIndex -= 1
         return subViewControllers[currentIndex]
-        
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {

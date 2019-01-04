@@ -223,8 +223,8 @@
                                                                 <constraint firstItem="bvb-d2-jvo" firstAttribute="top" secondItem="vQe-vc-Lb4" secondAttribute="bottom" constant="5" id="o4R-Lf-w8X"/>
                                                             </constraints>
                                                             <connections>
-                                                                <outlet property="iconCollectionCell" destination="vQe-vc-Lb4" id="hZd-0n-74c"/>
-                                                                <outlet property="titleCollectionCell" destination="bvb-d2-jvo" id="agZ-DF-uBp"/>
+                                                                <outlet property="iconImage" destination="vQe-vc-Lb4" id="3Ba-k7-eh8"/>
+                                                                <outlet property="titleLabel" destination="bvb-d2-jvo" id="fKM-fV-BAB"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>
