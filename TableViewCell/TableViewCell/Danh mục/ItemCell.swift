@@ -10,9 +10,4 @@ class ItemCell: UITableViewCell {
         iconImage.layer.cornerRadius = iconImage.frame.width/2
         iconImage.clipsToBounds = true
     }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
 }

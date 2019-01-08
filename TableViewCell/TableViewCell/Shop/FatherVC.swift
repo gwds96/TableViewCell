@@ -2,19 +2,20 @@ import UIKit
 
 class FatherVC: UIViewController {
     
-    @IBOutlet weak var button0: UIButton!
-    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var mainButton: UIButton!
+    @IBOutlet weak var listButton: UIButton!
     @IBOutlet weak var containerView: UIView!
     var page: ShopPVC!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        button0.setTitleColor(UIColor.cyan, for: .normal)
+        mainButton.setTitleColor(UIColor.cyan, for: .normal)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cellIdentifier = "ShopPVC"
         if let vc = segue.destination as? ShopPVC,
-            segue.identifier == "ShopPVC" {
+            segue.identifier == cellIdentifier {
             self.page = vc
             vc.delegateB = self
         }
@@ -34,9 +35,9 @@ extension FatherVC: ButtonDelegate {
     
     func colorOfButton(_ number: Int) {
         let color0: UIColor = (number == 0) ? .cyan : .black
-        button0.setTitleColor(color0, for: .normal)
+        mainButton.setTitleColor(color0, for: .normal)
         let color1: UIColor = (number == 1) ? .cyan : .black
-        button1.setTitleColor(color1, for: .normal)
+        listButton.setTitleColor(color1, for: .normal)
     }
     
 }

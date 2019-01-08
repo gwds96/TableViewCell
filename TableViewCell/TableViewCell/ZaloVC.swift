@@ -1,6 +1,6 @@
 import UIKit
 
-class ZaloVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ZaloVC: UIViewController {
     
     @IBOutlet weak var zaloTableView: UITableView!
     
@@ -12,20 +12,21 @@ class ZaloVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         self.tabBarController?.tabBar.barTintColor = UIColor.white
         self.tabBarController?.tabBar.backgroundColor = UIColor.white
     }
-   
+}
+
+extension ZaloVC: UITableViewDataSource, UITableViewDelegate {
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return 1
-        }
-        return 6
+        return section == 0 ? 1 : 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ZaloTCell", for: indexPath) as! ZaloTCell
+        let cellIdentifier = "ZaloTCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ZaloTCell
         if indexPath.section == 0 {
             cell.zaloIconCell.image = #imageLiteral(resourceName: "icons8-firestorm-48")
             cell.zaloTitleCell.text = "Zalo"

@@ -4,7 +4,7 @@ protocol ButtonDelegate: class {
     func colorOfButton(_ number: Int)
 }
 
-class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+class ShopPVC: UIPageViewController {
     
     var currentIndex: Int = 0
     
@@ -23,7 +23,9 @@ class ShopPVC: UIPageViewController, UIPageViewControllerDataSource, UIPageViewC
         self.delegate = self
         setViewControllers([subViewControllers[0]], direction: .forward, animated: true, completion: nil)
     }
-    
+}
+
+extension ShopPVC:UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     func moveToPage(_ index: Int) {
         if index == 1 {
             setViewControllers([subViewControllers[index]], direction: .forward, animated: true, completion: nil)
