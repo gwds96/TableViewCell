@@ -8,7 +8,7 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let arrayIconForSection = [[#imageLiteral(resourceName: "icons8-super-mario-48"), #imageLiteral(resourceName: "icons8-aquaman-48"), #imageLiteral(resourceName: "icons8-joker-dc-48"), #imageLiteral(resourceName: "icons8-harley-quinn-dc-48"), #imageLiteral(resourceName: "icons8-deathstroke-48")], [#imageLiteral(resourceName: "icons8-harley-quinn-suicide-squad-48"), #imageLiteral(resourceName: "icons8-superman-dc-48"), #imageLiteral(resourceName: "icons8-green-lantern-dc-48"), #imageLiteral(resourceName: "icons8-christmas-angel-64 (1)"), #imageLiteral(resourceName: "icons8-firestorm-48")],
                                [#imageLiteral(resourceName: "icons8-lex-luthor-48"), #imageLiteral(resourceName: "icons8-green-arrow-dc-48"), #imageLiteral(resourceName: "icons8-joker-suicide-squad-48"), #imageLiteral(resourceName: "icons8-the-flash-head-48"), #imageLiteral(resourceName: "icons8-wonder-woman-480")]]
     let arrayTitleForSection = [["Super Mario", "Aquaman", "Joker", "Quinn", "Luthor"], ["Harley", "Supermen", "Green", "Arrow", "Firestorm"], ["Deathstroke", "Batman", "Suicide", "Flash", "Wonder Woman"]]
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -29,7 +29,14 @@ class MainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 120
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
+    }
 }

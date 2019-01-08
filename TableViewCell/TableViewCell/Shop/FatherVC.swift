@@ -9,7 +9,7 @@ class FatherVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        button0.backgroundColor = UIColor.red
+        button0.setTitleColor(UIColor.cyan, for: .normal)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,10 +33,10 @@ class FatherVC: UIViewController {
 extension FatherVC: ButtonDelegate {
     
     func colorOfButton(_ number: Int) {
-        let color0: UIColor = (number == 1) ? .white : .red
-        button0.backgroundColor = color0
-        let color1: UIColor = (number == 0) ? .white : .red
-        button1.backgroundColor = color1
+        let color0: UIColor = (number == 0) ? .cyan : .black
+        button0.setTitleColor(color0, for: .normal)
+        let color1: UIColor = (number == 1) ? .cyan : .black
+        button1.setTitleColor(color1, for: .normal)
     }
     
 }
